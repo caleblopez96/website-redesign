@@ -22,8 +22,17 @@ body {
 header {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 2rem;
+	padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
+}
+
+*:not(h1):not(h2):not(h3):not(nav a) {
+  font-family: var(--body-font);
 }
 
 header nav {
@@ -35,20 +44,21 @@ nav {
   align-items: center;
 }
 
-ul {
+nav ul {
 	display: flex;
   flex-wrap: wrap;
 	gap: 2rem;
   align-items: center;
 }
 
-ul li{
+ul li {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
+  font-family: var(--heading-font);
 }
 
 /* a:visited{
@@ -65,7 +75,6 @@ header, footer{
   background-color: gray;
 	text-align: center;	
 	line-height: 1.5;
-	font-family: var(--heading-font);
 }
 
 /* .flex-child > * {
@@ -74,13 +83,11 @@ header, footer{
 
 .hero-title {
   font-size: clamp(2.475rem, 6.3vw, 5.25rem);
-  font-family: var(--heading-font);
   text-align: center;
 }
 
 .hero-text {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
-  font-family: var(--body-font);
   padding: 1.25rem 0;
   text-wrap: balance;
   text-align: center;
@@ -91,14 +98,14 @@ header, footer{
   width: 100%;
   display: block;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
-h2 {
+.small-topper {
   text-align: center;
-  font-family: var(--heading-font);
 }
 
-.container {
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +128,6 @@ path {
   cursor: pointer;
   display: inline-block;
   margin: 0;
-  font-family: var(--heading-font);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 20px;
@@ -136,10 +142,25 @@ path {
   touch-action: manipulation;
 }
 
+.services-content{
+  padding: 1rem 0;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+
+
+
 @media screen and (width <= 769px) {
-  ul li:nth-child(2),
-  ul li:nth-child(3),
-  ul li:nth-child(5) {
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(5) {
     display: none;
 }
 
@@ -149,9 +170,15 @@ path {
     object-fit: contain;
   }
 
-  h2 {
+  .small-topper {
     font-size: .65rem;
     letter-spacing: .75rem;
+  }
+
+  .services-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
