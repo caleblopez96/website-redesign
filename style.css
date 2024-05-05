@@ -118,6 +118,8 @@ h2 {
     display: inline-block;
     margin: 0 auto;
     object-fit: contain;
+    height: 300px;
+    width: 350px;
   }
 
   h2 {
