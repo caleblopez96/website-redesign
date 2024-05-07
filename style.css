@@ -191,7 +191,6 @@ header, footer{
 }
 
 .services-content{
-  padding: 1rem 0;
   text-align: center;
   gap: .5rem;
   width: 100%;
@@ -214,7 +213,9 @@ header, footer{
   align-items: center;
 }
 
-.services-content li::marker: "CUM";
+.services-content li::marker {
+  marker: "";
+}
 
 .services-grid{
   display: grid;
