@@ -1,6 +1,12 @@
 :root{
+  --safety-yellow: #ffff00;
+
   --heading-font: "Oswald", sans-serif;
   --body-font: "Open Sans", sans-serif;
+
+  --box-shadow-minimal: "box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px";
+  --box-shadow-prominent: "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px";
+
 }
 
 *,
@@ -37,8 +43,8 @@ a {
 	text-decoration: none;
 }
 
-.header {
-	border-bottom: 1px solid #e2e8f0;
+header {
+  box-shadow: var(--box-shadow-prominent);
 }
 
 .navbar {
@@ -75,13 +81,19 @@ a {
 
 .nav-link {
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 }
 
 .nav-link:hover {
-	color: #482ff7;
+  color: var(--safety-yellow);
 }
+
+.current-link {
+  color: var(--safety-yellow);
+  text-decoration: underline var(--safety-yellow) 2px;
+}
+
 
 .nav-logo {
 	font-size: 2.1rem;
