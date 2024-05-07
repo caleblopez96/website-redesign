@@ -31,17 +31,23 @@ h3 {
   font-family: var(--heading-font);
 }
 
-*:not(h1):not(h2):not(h3):not(nav a) {
-  font-family: var(--body-font);
-}
-
 li {
 	list-style: none;
 }
 
+p {
+  font-family: var(--body-font);
+}
+
+
 a {
 	text-decoration: none;
 }
+
+a:visited{
+  color: #fff;
+}
+
 
 header {
   box-shadow: var(--box-shadow-prominent);
@@ -105,6 +111,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.blur {
+  filter: blur(7rem);
 }
 
 main{
@@ -201,6 +211,7 @@ footer > * {
 
 address > * {
   line-height: 2rem;
+  color: #fff;
 }
 
 
@@ -236,10 +247,12 @@ address > * {
 
 .nav-menu.active {
     left: 0;
+    top: 5rem;
+    position: absolute;
 }
 
 .nav-item {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
 }
 
 .hamburger {
