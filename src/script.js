@@ -9,5 +9,5 @@ function mobileMenu() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
 	// main.classList.toggle("blur");
-	footer.classList.toggle("blur");
+	// footer.classList.toggle("blur");
 }
