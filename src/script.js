@@ -12,6 +12,13 @@ function mobileMenu() {
 	footer.classList.toggle("blur");
 }
 
+// window.addEventListener('resize', function() {
+//   const maxWidth = 769;
+//   if (window.innerWidth > maxWidth) {
+//   hamburger.classList.remove('active');
+// 	navMenu.classList.remove('active');
+// }});
+
 // POINTLESS AH FUNC BORED WRITING CSS AND HTML :(
 //function upperCaseHeader() {
 // 	const navItems = document.querySelectorAll(".nav-item");

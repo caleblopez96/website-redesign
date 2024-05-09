@@ -87,6 +87,7 @@ path {
 	justify-content: space-between;
 	align-items: center;
   gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .nav-item {
@@ -125,7 +126,7 @@ main{
 }
 
 header, footer{
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.95);
 	line-height: 1.5;
 }
 
@@ -351,11 +352,6 @@ address h1 {
     object-fit: contain;
   }
 
-  /* .small-topper {
-    font-size: .65rem;
-    font-weight: 700;
-  } */
-
   .services-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -367,11 +363,10 @@ address h1 {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: gray;
+
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.05);
 }
 
   .nav-menu.active {
