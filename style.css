@@ -190,7 +190,6 @@ header, footer{
   text-align: center;
   gap: .5rem;
   width: 100%;
-  max-width: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,6 +265,15 @@ footer {
   font-family: var(--heading-font);
 }
 
+.footer-img {
+  max-width: 100%;
+  padding: 1.75rem;
+}
+
+footer li {
+  display: inline;
+}
+
 footer > * {
   padding: .5rem 0 ;
 }
@@ -273,11 +281,11 @@ footer > * {
 address > * {
   line-height: 2rem;
   color: var(--wht);
+  font-style: normal;
 }
 
 
 @media screen and (max-width: 769px) {
-
   header {
     position: sticky;
     top: 0;

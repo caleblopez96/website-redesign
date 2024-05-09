@@ -11,3 +11,11 @@ function mobileMenu() {
 	main.classList.toggle("blur");
 	footer.classList.toggle("blur");
 }
+
+// POINTLESS AH FUNC BORED WRITING CSS AND HTML :(
+//function upperCaseHeader() {
+// 	const navItems = document.querySelectorAll(".nav-item");
+// 	navItems.forEach(navItem => navItem.textContent = navItem.textContent.toUpperCase())
+// }
+
+// upperCaseHeader()
