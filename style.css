@@ -125,7 +125,6 @@ main{
 
 header, footer{
   background-color: gray;
-	text-align: center;	
 	line-height: 1.5;
 }
 
@@ -261,28 +260,55 @@ header, footer{
   width: fit-content;
 }
 
-footer {
-  font-family: var(--heading-font);
-}
 
 .footer-img {
   max-width: 100%;
   padding: 1.75rem;
+  text-align: center;
+}
 
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer li {
   display: inline;
 }
 
+footer a {
+  font-family: var(--body-font);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section a {
+  padding-left: .5rem;
+}
+
 footer > * {
-  padding: .5rem 0 ;
+  padding: .5rem 1rem;
+  text-align: left;
 }
 
 address > * {
   line-height: 2rem;
   color: var(--wht);
   font-style: normal;
+}
+
+address p,
+address a{
+  padding-left: .5rem;
+}
+
+.copyright {
+  text-align: center;
 }
 
 
