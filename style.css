@@ -188,13 +188,12 @@ header, footer{
 }
 
 .services-content{
-  text-align: center;
   gap: .5rem;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   font-family: var(--body-font);
   text-decoration: none;
   height: 100%;
@@ -202,15 +201,18 @@ header, footer{
 }
 
 .services-content ul {
-  display: flex;
+  padding:  .25rem;
+}
+
+.services-content ul li {
+  padding: .5rem;
+  margin: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  /* display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: .25rem;
-  align-items: center;
-}
-
-.services-content li::marker {
-  marker: "";
+  align-items: center; */
 }
 
 .services-grid{
@@ -248,7 +250,6 @@ header, footer{
 .button-svg-container {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .get-started {
@@ -261,7 +262,7 @@ header, footer{
   padding: 0 1.5rem;
   color: var(--boxing-glove-red);
   background-color: var(--wht);
-  display: flex;
+  display: block;
   position: relative;
   z-index: 1;
   transition: color 0.3s;
@@ -286,6 +287,11 @@ footer li {
   display: inline;
 }
 
+footer h3, footer h1 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
 footer a {
   font-family: var(--body-font);
 }
@@ -300,7 +306,6 @@ footer a:visited {
 }
 
 .footer-section a {
-  padding-left: .5rem;
   line-height: 2rem;
 }
 
@@ -317,11 +322,6 @@ address > * {
 
 address h1 {
   font-size: 1.25rem
-}
-
-address p,
-address a {
-  padding-left: .5rem;
 }
 
 .copyright {
