@@ -363,7 +363,6 @@ address h1 {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-
     width: 100%;
     text-align: center;
     transition: 0.3s;

@@ -2,6 +2,12 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
+const path = document.querySelector("path");
+const button = document.querySelector("night-mode-toggle-button");
+
+// button.addEventListener("click", () => {
+//   path.classList.toggle("svgDay");
+// });
 
 hamburger.addEventListener("click", mobileMenu);
 
