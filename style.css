@@ -115,6 +115,7 @@ path {
 	gap: 1rem;
 }
 
+/* is this really necessary now that my nav-menu active is long enough? eh..*/
 .blur {
 	filter: blur(0.75rem);
 }
@@ -330,6 +331,10 @@ footer a {
 }
 
 footer a:visited {
+	color: var(--wht);
+}
+
+a:-webkit-any-link {
 	color: var(--wht);
 }
 
