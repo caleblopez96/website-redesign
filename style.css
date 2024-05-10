@@ -155,7 +155,7 @@ footer {
 .small-topper {
 	text-align: center;
 	font-size: 1rem;
-	color: var(--boxing-glove-red);
+	/* color: var(--boxing-glove-red); */
 	letter-spacing: 0.35rem;
 }
 
@@ -206,7 +206,6 @@ footer {
 }
 
 .services-content i {
-	color: var(--boxing-glove-red);
 	font-style: normal;
 	font-weight: bold;
 }
@@ -331,10 +330,6 @@ footer a {
 }
 
 footer a:visited {
-	color: var(--wht);
-}
-
-a:-webkit-any-link {
 	color: var(--wht);
 }
 
