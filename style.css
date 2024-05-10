@@ -133,6 +133,10 @@ footer {
 	line-height: 1.5;
 }
 
+#hero {
+	margin-top: 5rem;
+}
+
 .hero-title {
 	font-size: clamp(2.475rem, 6.3vw, 5.25rem);
 	text-align: center;
@@ -162,9 +166,9 @@ footer {
 .small-topper {
 	color: var(--light-red);
 	text-align: center;
-	font-size: .75rem;
-	letter-spacing: 0.35rem;
-	font-weight: 700;
+	/* font-size: .75rem;
+	letter-spacing: 0.35rem; */
+	font-weight: 400;
 }
 
 .hero-container {
