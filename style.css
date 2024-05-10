@@ -53,6 +53,7 @@ a {
 
 header {
 	box-shadow: var(--box-shadow-prominent);
+	margin-bottom: 5rem;
 }
 
 button {
@@ -133,9 +134,9 @@ footer {
 	line-height: 1.5;
 }
 
-#hero {
+/* #hero {
 	margin-top: 5rem;
-}
+} */
 
 .hero-title {
 	font-size: clamp(2.475rem, 6.3vw, 5.25rem);
@@ -166,8 +167,6 @@ footer {
 .small-topper {
 	color: var(--light-red);
 	text-align: center;
-	/* font-size: .75rem;
-	letter-spacing: 0.35rem; */
 	font-weight: 400;
 }
 
