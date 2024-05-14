@@ -223,13 +223,17 @@ footer {
 
 .services-content ul {
 	padding: 0.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .services-content ul li {
-	padding: 0.5rem;
+	padding: 1.5rem;
 	margin: 1rem 0;
 	background-color: rgba(0, 0, 0, 0.35);
 	text-align: left;
+	font-size: .8rem;
 }
 
 .services-grid {
