@@ -134,10 +134,6 @@ footer {
 	line-height: 1.5;
 }
 
-/* #hero {
-	margin-top: 5rem;
-} */
-
 .hero-title {
 	font-size: clamp(2.475rem, 6.3vw, 5.25rem);
 	text-align: center;
