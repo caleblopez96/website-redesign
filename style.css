@@ -178,7 +178,7 @@ footer {
 	background-color: var(--boxing-glove-red);
 	border-radius: 8px;
 	border-width: 0;
-	width: fit-content;
+	max-width: fit-content;
 	color: var(--wht);
 	cursor: pointer;
 	display: inline-block;
