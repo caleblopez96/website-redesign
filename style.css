@@ -134,8 +134,12 @@ footer {
 	line-height: 1.5;
 }
 
+#hero {
+	margin-bottom: 5rem;
+}
+
 .hero-title {
-	font-size: clamp(2.475rem, 6.3vw, 5.25rem);
+	font-size: clamp(3rem, 5vw, 5rem);
 	text-align: center;
 }
 
@@ -158,20 +162,31 @@ footer {
 	display: block;
 	margin: 0 auto;
 	padding: 1rem 0;
+	filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.9));
 }
 
 .small-topper {
 	color: var(--light-red);
 	text-align: center;
 	font-weight: 400;
+	font-size: 80%;
 }
+
 
 .hero-container {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding: 0.5rem 0;
-	gap: 2rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.hero-column {
+	flex: 1;
+}
+
+.two-button-container {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .join-cbg {
@@ -184,11 +199,11 @@ footer {
 	display: inline-block;
 	margin: 0;
 	font-family: var(--heading-font);
-	font-size: 1.5rem;
+	font-size: 1;
 	font-weight: 500;
 	line-height: 20px;
 	list-style: none;
-	padding: 1rem 1.2rem;
+	padding: .75rem 1.2rem;
 	text-align: center;
 	transition: all 200ms;
 	vertical-align: baseline;
@@ -220,17 +235,15 @@ footer {
 
 .services-content ul {
 	padding: 0.25rem;
-	display: flex;
+	/* display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-around; */
 }
 
 .services-content ul li {
 	padding: 1.5rem;
 	margin: 1rem 0;
 	background-color: rgba(0, 0, 0, 0.35);
-	text-align: left;
-	font-size: .8rem;
 	font-family: var(--heading-font);
 }
 
@@ -424,9 +437,9 @@ address h1 {
 		object-fit: contain;
 	}
 
-	.hero-container a:nth-of-type(2) {
-    display: none;
-}
+	.hero-container {
+		flex-direction: column;
+	}
 
 	.services-grid {
 		display: grid;
@@ -475,5 +488,11 @@ address h1 {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.testimonial-card-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
 }
