@@ -235,14 +235,16 @@ footer {
 
 .services-content ul {
 	padding: 0.25rem;
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around; */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 2rem;
+	max-width: 100%;
 }
 
 .services-content ul li {
-	padding: 1.5rem;
-	margin: 1rem 0;
+	padding: 1rem;
+	/* margin: 1rem 0; */
 	background-color: rgba(0, 0, 0, 0.35);
 	font-family: var(--heading-font);
 }
@@ -445,6 +447,12 @@ address h1 {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 2rem;
+	}
+
+	.services-content ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	.nav-menu {
